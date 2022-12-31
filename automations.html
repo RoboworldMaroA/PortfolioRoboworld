@@ -3,77 +3,83 @@
 
 <head>
 
-  <title>Robo-world</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Automations - Robo-world</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
-  <!-- Bootstrap -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link href="css/cnc_programmer.css" rel="stylesheet" type="text/css">
-  <link href="css/roboworldMobileRobots.css" rel="stylesheet" type="text/css">
-  <link href="css/roboworldAutomations.css" rel="stylesheet" type="text/css">
-  <link href="css/roboworldIndex.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <link href="CSS_Portfolio/portfolioAutomations.css" rel="stylesheet" type="text/css" />
+
 </head>
 
 <body>
-  <div class="container-fluid">
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#topFixedNavbar1">
-            <span class="sr-only">Toggle navigation</span>
-            Menu <span class="glyphicon glyphicon-chevron-down "></span>
-          </button>
-          <a class="navbar-brand" href="index.html"> <b>ROBO-WORLD</b></a>
-        </div>
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="topFixedNavbar1">
-          <ul class="nav navbar-nav">
-            <li><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-            <li class="dropdown, active"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                aria-expanded="false">Projects<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="mobile_robots.html">Mobile robots</a></li>
-                <li><a href="softwareDevelopment.html">Software Development</a></li>
-                <li class="active"><a href="automations.html">Automations</a></li>
-              </ul>
-            <li><a href="about_me.html">About me</a></li>
-            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                aria-expanded="false">Language<span class="caret"></span></a>
-              <ul class="dropdown-menu" role="menu">
-                <li><a href="index.html">EN</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div>
+
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <a class="navbar-brand" href="index.html"><b>ROBO-WORLD</b></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item active" href="automations.html">Automations</a>
+              <a class="dropdown-item" href="mobile_robots.html">Mobile Robots</a>
+              <a class="dropdown-item" href="softwareDevelopment.html">Software Development</a>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="about_me.html">About me</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Language
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">EN</a>
+            </div>
+          </li>
+
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+        </form>
       </div>
     </nav>
-  </div>
+  </header>
 
 
-  <!-- Top Photo Background -->
-  <div class="row" id="iconsMobileRobots">
-    <section class="row">
-      <img id="back" src="my_images/darker_blue_background.png" alt="background under nav bar" class="img-responsive ">
-    </section>
-  </div>
 
   <!--Main Contetnt-->
-  <div class="row">
-    <section class="row" id="feature">
-      <div class="col-sm-10 col-sm-offset-2   col-md-10 col-sm-offset-1  ">
-        <h2 class="heading2inAutomations"> Industrial Robots and Automations</h2>
-        <br>
+  <main role="main" class="container-fluid">
+    <section class="row justify-content-md-center" id="textInTheMiddle">
+      <div class="col-sm-10 col-md-10 col-lg-10">
+        <h1> Industrial Robots and Automations</h1>
         <p>
           Had the opportunity to put my knowledge into practice while working as an Automation Engineer in the R&D
           department of Prodieco.
           Also operated and programmed ABB Robots at the Burnside Autocyl.
-
         </p>
-        <h2 class="heading2inAutomations">Project 1</h2>
-        <h2 class="heading2inAutomations">Tablet sorting machine.</h2>
+        <h1>Project 1</h1>
+        <h1>Tablet sorting machine.</h1>
         <p>
           My task was to build a machine to tablet sorting device. This machine was fitted just behind the exit from the
           Elim.</p>
@@ -95,126 +101,150 @@
           GT-DESIGNER 3.
         <p> The algorithm for determining the drop zone was created in Excel and converted to PLC.</p>
       </div>
-      <div class="col-sm-10 col-sm-offset-1"></div>
     </section>
-    <section class="col-lg-12"></section>
-  </div>
+  </main>
 
   <!-- Section with videos and photos for robots ABB -->
-  <section class="row">
-    <div class="col-lg-10 col-lg-offset-1">
-      <div class="Ikonki" style="text-align:center;">
-        <!-- VIDEOS -->
-        <div class="clearfix visible-sm-block"></div>
-        <article class="col-sm-6 col-lg-6 col-md-6">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe width="364" height="647" src="https://youtube.com/embed/r8Qyh7Ktifo?feature=share"
-              title="elim and segregator"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <a class="btn btn-primary btn-lg" role="button">Segregator with eLim</a>
-          <p></p>
-        </article>
+  <section id="videosUnderDescription">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="row">
+          <!-- VIDEOS -->
+          <article class="col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe width="364" height="647" src="https://youtube.com/embed/r8Qyh7Ktifo?feature=share"
+                title="elim and segregator"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld"
+              role="button">Segregator with eLim</a>
+            <p></p>
+          </article>
 
-        <article class=" col-sm-6 col-lg-6 col-md-6">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe width="364" height="647" src="https://youtube.com/embed/SY-eLJJLF0U?feature=share"
-              title="segregator test"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <a class="btn btn-primary btn-lg" role="button">Test - Sorting tablets </a>
-          <p></p>
-          <p>&nbsp;</p>
-        </article>
-
-        <!-- VIDEOS 2-->
-        <div class="clearfix visible-sm-block"></div>
-        <article class="col-sm-6 col-lg-6 col-md-6">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe width="364" height="647" src="https://www.youtube.com/embed/_r0SwGsYiGM" title="elim and segregator"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <a class="btn btn-primary btn-lg" role="button">View HMI and Set Rollers</a>
-          <p></p>
-        </article>
-
-        <article class=" col-sm-6 col-lg-6 col-md-6">
-          <div class="embed-responsive embed-responsive-4by3">
-            <iframe width="364" height="647" src="https://www.youtube.com/embed/S1P_63TgCxY" title="set drop zone"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen></iframe>
-          </div>
-          <a class="btn btn-primary btn-lg" href="#" role="button">Setting dropping zone. </a>
-          <p></p>
-          <p>&nbsp;</p>
-        </article>
-
-        <!-- Second Phoostos -->
-        <article class="col-sm-6 col-lg-6 col-md-6">
-          <img tabindex="1" src="projects/automations/electricalBox.jpg" alt="line_follower" class="img-responsive "
-            title="4 wheels with camera Temsorflow" />
-          <a class="btn btn-primary btn-lg" role="button">Electrical Box</a>
-          <p></p>
-        </article>
-
-        <article class="col-sm-offset-0 col-sm-6  col-lg-6 col-md-6">
-          <img src="projects/automations/segregator_with_elim2.jpg" alt="4 wheels with camera"
-            class="img-responsive " />
-          <a class="btn btn-primary btn-lg" role="button">Segregator tablets connected to eLim </a>
-          <p> </p>
-        </article>
-
-
-        <div class="clearfix visible-sm-block"></div>
-        <article class="col-sm-6 col-lg-6 col-md-6">
-          <img src="projects/automations/segragator_with_elim_longer2.png" alt="line follower design"
-            class="img-responsive " />
-          <a class="btn btn-primary btn-lg" role="button">Segregator tablets connected to eLim </a>
-          <p></p>
-        </article>
-
-        <!-- Middle -->
-        <article class="col-sm-6 col-lg-6 col-md-6"> <img tabindex="1" src="projects/automations/GTSimulator.png"
-            alt="line_follower" class="img-responsive " title="Line_follower" />
-          <a class="btn btn-primary btn-lg" role="button">MELSOFT GT Designer 3</a>
-          <p></p>
-        </article>
-
-        <article class="col-sm-offset-0 col-sm-6  col-lg-6 col-md-6" id="melsoftSymulator">
-          <img src="projects/automations/HMIAdjustNewHomePositionSmall.png" alt="Six_weel_robot"
-            class="img-responsive " />
-          <a class="btn btn-primary btn-lg" role="button">MELSOFT GT Simulator </a>
-          <p> </p>
-        </article>
-
-
-        <!-- LAST 2 -->
-        <div class="clearfix visible-sm-block"></div>
-        <article class="col-sm-6 col-lg-6 col-md-6"><img src="projects/automations/HMIUpdateDropZoneSimulatorSmall.png"
-            alt="line follower design" class="img-responsive " />
-          <a class="btn btn-primary btn-lg" href="#" role="button">GT Simulator Set Zone </a>
-          <p></p>
-        </article>
-
-        <article class=" col-sm-6 col-lg-6 col-md-6"><img src="projects/automations/PLC3v2.png" alt="design_robots"
-            class="img-responsive " />
-          <a class="btn btn-primary btn-lg" href="#" role="button">PLC Programing GX Works3 </a>
-          <p></p>
-          <p>&nbsp;</p>
-        </article>
+          <article class=" col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe width="364" height="647" src="https://youtube.com/embed/SY-eLJJLF0U?feature=share"
+                title="segregator test"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld" role="button">Test -
+              Sorting tablets </a>
+            <p></p>
+            <p>&nbsp;</p>
+          </article>
+        </div>
       </div>
     </div>
   </section>
 
+
+  <section id="videoUnderDescription2">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="row">
+
+          <!-- VIDEOS 2-->
+          <article class="col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe width="364" height="647" src="https://www.youtube.com/embed/_r0SwGsYiGM"
+                title="elim and segregator"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld" role="button">View HMI
+              and Set Rollers</a>
+            <p></p>
+          </article>
+
+          <article class=" col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe width="364" height="647" src="https://www.youtube.com/embed/S1P_63TgCxY" title="set drop zone"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld" role="button">Setting
+              dropping zone. </a>
+            <p></p>
+            <p>&nbsp;</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="photosUnderDescription2">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="row">
+          <!-- Phoostos -->
+          <article class="col-sm-6 col-lg-6 col-md-6">
+            <img tabindex="1" src="projects/automations/electricalBox.jpg" alt="line_follower" class="img-fluid"
+              title="4 wheels with camera Temsorflow" />
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld"
+              role="button">Electrical Box</a>
+            <p></p>
+          </article>
+
+          <article class="col-sm-offset-0 col-sm-6  col-lg-6 col-md-6">
+            <img src="projects/automations/segregator_with_elim2.jpg" alt="4 wheels with camera" class="img-fluid" />
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld"
+              role="button">Segregator tablets and eLim </a>
+            <p> </p>
+          </article>
+
+          <article class="col-sm-6 col-lg-6 col-md-6">
+            <img src="projects/automations/segragator_with_elim_longer2.png" alt="line follower design"
+              class="img-fluid" />
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld"
+              role="button">Segregator tablets and eLim </a>
+            <p></p>
+          </article>
+
+          <!-- Middle -->
+          <article class="col-sm-6 col-lg-6 col-md-6"> <img tabindex="1" src="projects/automations/GTSimulator.png"
+              alt="line_follower" class="img-fluid" title="Line_follower" />
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld" role="button">MELSOFT
+              GT Designer 3</a>
+            <p></p>
+          </article>
+
+
+          <article class="col-sm-offset-0 col-sm-6  col-lg-6 col-md-6">
+            <img src="projects/automations/HMIAdjustNewHomePositionSmall.png" alt="Six_weel_robot" class="img-fluid" />
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld" role="button">MELSOFT
+              GT Simulator </a>
+            <p> </p>
+          </article>
+
+          <div class="clearfix visible-sm-block"></div>
+          <!-- LAST 2 -->
+          <article class="col-sm-6 col-lg-6 col-md-6"><img
+              src="projects/automations/HMIUpdateDropZoneSimulatorSmall.png" alt="line follower design"
+              class="img-fluid" />
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld" role="button">GT
+              Simulator Set Zone </a>
+            <p></p>
+          </article>
+
+          <article class=" col-sm-6 col-lg-6 col-md-6"><img src="projects/automations/PLC3v2.png" alt="design_robots"
+              class="img-fluid" />
+            <a class="btn btn-primary btn-md" href="https://github.com/RoboworldMaroA/Roboworld" role="button">PLC
+              Programing GX Works3 </a>
+            <p></p>
+            <p>&nbsp;</p>
+          </article>
+        </div>
+      </div>
+  </section>
+
   <!-- ###########   ROBOTICS   ################# -->
-  <div class="row">
-    <section class="row" id="feature2">
-      <div class="col-sm-10 col-sm-offset-2   col-md-10 col-sm-offset-1  ">
-        <h2 class="heading2inAutomations"> Robots ABB</h2>
-        <br>
+  <div class="container-fluid">
+    <section class="row justify-content-md-center" id="textInTheMiddleRobotics">
+      <div class="col-sm-10 col-md-10 col-lg-10">
+        <h1> Robots ABB</h1>
         <p>
           While working at Burnside Autocyl as a Manufacturning Engineer I programmed numerically controlled machines
           such
@@ -227,105 +257,110 @@
           of the stations I worked on. I used Robot Studio to learn how to program the robots.
         </p>
       </div>
-      <div class="col-sm-10 col-sm-offset-1"></div>
-      <section class="col-lg-12"></section>
-      <section class="row">
-        <div class="col-lg-10 col-lg-offset-1">
-          <div class="Ikonki" style="text-align:center;">
-            <!-- VIDEOS Robots ABB-->
-            <div class="clearfix visible-sm-block"></div>
-
-            <article class="col-sm-6 col-lg-6 col-md-6">
-              <div class="embed-responsive embed-responsive-4by3" id="videoABBPhoto1">
-                <iframe width="364" height="647" src="https://youtube.com/embed/KR7a3RQhG2s?feature=share"
-                  title="roboworld"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-              <!-- <a class="btn btn-primary btn-lg" role="button">Robot Abb Writing Roboworld</a> -->
-              <p> Robot Abb Writing Roboworld</p>
-            </article>
-
-            <article class=" col-sm-6 col-lg-6 col-md-6">
-              <div class="embed-responsive embed-responsive-4by3" id="videoABBPhoto2">
-                <iframe width="364" height="647" src="https://youtube.com/embed/8pzvNKaQp8U?feature=share"
-                  title="roboworldPrecise"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-              <!-- <a class="btn btn-primary btn-lg" role="button"> </a> -->
-              <p> ABB Robot - Precise writing</p>
-              <p>&nbsp;</p>
-            </article>
-
-            <!-- VIDEOS 2 Robots ABB--->
-            <div class="clearfix visible-sm-block"></div>
-            <article class="col-sm-6 col-lg-6 col-md-6">
-              <div class="embed-responsive embed-responsive-4by3" id="videoABBPhoto3">
-                <iframe width="364" height="647" src="https://www.youtube.com/embed/QjWq9dUFC60"
-                  title="ABB Robot and CNC machine"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-              <p>ABB Robot and CNC machine</p>
-            </article>
-
-            <article class=" col-sm-6 col-lg-6 col-md-6">
-              <div class="embed-responsive embed-responsive-4by3">
-                <iframe width="364" height="647" src="https://www.youtube.com/embed/9TnMRwiZRpg"
-                  title="sABB Robot and CNC machine"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-              <p>ABB Robot and CNC machine</p>
-              <p>&nbsp;</p>
-            </article>
-
-            <!-- VIDEOS 3 Robots ABB--->
-            <div class="clearfix visible-sm-block"></div>
-            <article class="col-sm-6 col-lg-6 col-md-6">
-              <div class="embed-responsive embed-responsive-4by3">
-                <iframe width="364" height="647" src="https://www.youtube.com/embed/iM5o_WrKvtg"
-                  title="ABB Robot and CNC machine"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-              <p>ABB Robot and CNC machine</p>
-            </article>
-
-            <article class=" col-sm-6 col-lg-6 col-md-6">
-              <div class="embed-responsive embed-responsive-4by3">
-                <iframe width="364" height="647" src="https://www.youtube.com/embed/pO3lgGAaTF8"
-                  title="sABB Robot and CNC machine"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                  allowfullscreen></iframe>
-              </div>
-              <p>ABB Robot and CNC machine</p>
-              <p>&nbsp;</p>
-            </article>
-
-            <!-- Second Phoostos Robots ABB- -->
-            <article class="col-sm-4 col-lg-4 col-md-4">
-              <img tabindex="1" src="projects/automations/AbbPhotos/ABB4.jpg" alt="ABB 1" class="img-responsive "
-                title="Abb robot 1" />
-              <p>ABB Robot</p>
-            </article>
-
-            <article class="col-sm-offset-0 col-sm-4  col-lg-4 col-md-4">
-              <img src="projects/automations/AbbPhotos/ABB2.jpg" alt="ABB Robot 2" class="img-responsive " />
-              <p>ABB Robot</p>
-            </article>
-
-            <div class="clearfix visible-sm-block"></div>
-            <article class="col-sm-4 col-lg-4 col-md-4">
-              <img src="projects/automations/AbbPhotos/ABB3.jpg" alt="ABB Robot 3" class="img-responsive " />
-              <p>ABB Robot</p>
-            </article>
-          </div>
-        </div>
-      </section>
     </section>
   </div>
+
+
+
+  <section id="photosUnderDescriptionRobotics">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="row">
+
+          <!-- VIDEOS Robots ABB-->
+          <div class="clearfix visible-sm-block"></div>
+
+          <article class="col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3" id="videoABBPhoto1">
+              <iframe width="364" height="647" src="https://youtube.com/embed/KR7a3RQhG2s?feature=share"
+                title="roboworld"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <!-- <a class="btn btn-primary btn-lg" role="button">Robot Abb Writing Roboworld</a> -->
+            <p> Robot Abb Writing Roboworld</p>
+          </article>
+
+          <article class=" col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3" id="videoABBPhoto2">
+              <iframe width="364" height="647" src="https://youtube.com/embed/8pzvNKaQp8U?feature=share"
+                title="roboworldPrecise"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <!-- <a class="btn btn-primary btn-lg" role="button"> </a> -->
+            <p> ABB Robot - Precise writing</p>
+            <p>&nbsp;</p>
+          </article>
+
+          <!-- VIDEOS 2 Robots ABB--->
+          <div class="clearfix visible-sm-block"></div>
+          <article class="col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3" id="videoABBPhoto3">
+              <iframe width="364" height="647" src="https://www.youtube.com/embed/QjWq9dUFC60"
+                title="ABB Robot and CNC machine"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p>ABB Robot and CNC machine</p>
+          </article>
+
+          <article class=" col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe width="364" height="647" src="https://www.youtube.com/embed/9TnMRwiZRpg"
+                title="sABB Robot and CNC machine"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p>ABB Robot and CNC machine</p>
+            <p>&nbsp;</p>
+          </article>
+
+          <!-- VIDEOS 3 Robots ABB--->
+          <div class="clearfix visible-sm-block"></div>
+          <article class="col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe width="364" height="647" src="https://www.youtube.com/embed/iM5o_WrKvtg"
+                title="ABB Robot and CNC machine"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p>ABB Robot and CNC machine</p>
+          </article>
+
+          <article class=" col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3">
+              <iframe width="364" height="647" src="https://www.youtube.com/embed/pO3lgGAaTF8"
+                title="sABB Robot and CNC machine"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p>ABB Robot and CNC machine</p>
+            <p>&nbsp;</p>
+          </article>
+
+          <!-- Second Phoostos Robots ABB- -->
+          <article class="col-sm-4 col-lg-4 col-md-4">
+            <img tabindex="1" src="projects/automations/AbbPhotos/ABB4.jpg" alt="ABB 1" class="img-fluid "
+              title="Abb robot 1" />
+            <p>ABB Robot</p>
+          </article>
+
+          <article class="col-sm-offset-0 col-sm-4  col-lg-4 col-md-4">
+            <img src="projects/automations/AbbPhotos/ABB2.jpg" alt="ABB Robot 2" class="img-fluid" />
+            <p>ABB Robot</p>
+          </article>
+
+          <div class="clearfix visible-sm-block"></div>
+          <article class="col-sm-4 col-lg-4 col-md-4">
+            <img src="projects/automations/AbbPhotos/ABB3.jpg" alt="ABB Robot 3" class="img-fluid" />
+            <p>ABB Robot</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <!--  Footer -->
   <footer class="col-lg-12 col-sm-12 col-md-12">
@@ -356,19 +391,15 @@
     <p>2020-2022 Roboworld</p>
   </footer>
 
-
-
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
     crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
     crossorigin="anonymous"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
     crossorigin="anonymous"></script>
-
 </body>
 
 
