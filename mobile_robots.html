@@ -220,7 +220,7 @@
           As it turned out, the Raspberry Pi 3 has a weak processor and not enough RAM, which makes object
           recognition very slow.
           Started delving into the field of object recognition and found an interesting topic like Tensorflow.
-          Descided to use Tensorflow Lite and the built-in model on a Raspberry Pi, but the image was still analyzed at
+          Decided to use Tensorflow Lite and the built-in model on a Raspberry Pi, but the image was still analyzed at
           2
           frames
           per second.
@@ -323,19 +323,17 @@
           Prepared 300 photos of objects that I want to recognize. The problem is that for training purposes the size of
           the photos should be smaller than phone's camera.
           Photos should not be larger than 800x600 pixels, otherwise more computational time is needed for training.
-          Used Photoshop to do this, but unfortunately after some tweaking realized it could take hours so had to find
+          Used Photoshop to do this, but unfortunately after some time realized it could take hours so had to find
           another way.
-        </p>
-        <p>
-          On Mac we can change size in "preview", or on Windows is a free tool that can change multiple photos but I am
-          on Mac. Adobe has online solution but you have to be registered.
-
         </p>
         <p>
           Decided to make my own mini application that changes the resolution of photos.
           A program that allows me to change the resolution of photos in seconds is available on <a
             href="https://github.com/RoboworldMaroA/decreasePhotoSize/blob/main/README.md">GitHub</a>.
-
+          Application allow to reduce size of the photos and videos.
+          You can just download this app, no need to install and add the photos and videos that you want to convert to
+          smaller size and run
+          application.
         </p>
         <p>
           In the following videos is vision system with Raspberry pi4 (Tensorflow). Using the Coral accelerator allows
