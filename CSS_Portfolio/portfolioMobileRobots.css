@@ -122,6 +122,20 @@
   color: #f0f0f5;
 }
 
+/* Train model reconize Start Stop etc and driving robots */
+#textInTrainModelStartStop {
+  background-color: #052a3f;
+  margin-top: 2%;
+  padding-top: 2%;
+  padding-bottom: 1%;
+}
+
+#textInTrainModelStartStop p {
+  font-size: 1.2em;
+  color: #f0f0f5;
+}
+
+
 main {
   background-color: #052a3f;
   padding-top: 25%;
