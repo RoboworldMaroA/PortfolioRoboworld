@@ -384,35 +384,32 @@
     <section class="row justify-content-md-center" id="textInTrainModelStartStop">
       <div class="col-sm-10 col-md-10 col-lg-10">
 
-        <p>In 2023 teached my robot to recognize objects and when recognize sighn Start, Go, Stop, Turn Left, Turn Right
-          and Turn Back.</p>
-        <p>According to that what he recognize, implemented system to driving my robot.
-          Bellow you can see that when robot recognize GO then stard driving forward , when he met a sign turn right
-          then is driving to the right and stop at the end.
+        <p>In July 2023, I taught my robot to recognize objects like signs Start, Go, Stop, Turn Left, Turn Right and
+          Turn back.</p>
+        <p>I implemented a control system for my robot depending on what it recognized.
+          Below you can see that when the robot recognizes GO, it starts to go forward when it encounters a sign, turn
+          right, then it goes right and stops at the end when it sees "stop".
         </p>
         <p>
-          For training process used google colab project made by <a
+          To build the object recognition model, I used the google colab project made by <a
             href="https://colab.research.google.com/drive/1hf11j_eM67ogYupwv1YG7da321A2KVGg?usp=sharing"> Eje
             Electronics. </a>
-          Modified the code to my
-          needs and as a
-          result my robot could make a "decision" according to that what he can see.
+          I modified the code to my needs so that my robot could make a "decision" based on what it sees.
 
         </p>
 
         <p>
-          When used only Raspberry Pi then you can get only 2 frame persecond but when using the Coral accelerator
-          allows me to increase to 9 fps. As you can see raspberry pi allows me to create a autonomous robot with almost
-          real time object detection, but when we add additional elements like motor control then
-          FPS diraticly drop. In my opinion Raspberry Pi is a very good tool for the task like presented, but for a more
-          complicated task like ROS probably is not good enough.
-          This is why I should use diffrent development board, so I think that something from a range Jetson will be
-          better solution.
+          Using only Raspberry Pi you can only get 2 fps, but using Coral accelerator allows me to increase it to 9 fps.
+          As you can see, the raspberry pi allows me to create an autonomous robot with near real-time object detection,
+          but when we add additional elements such as motor control, the FPS drops drastically. In my opinion, the
+          Raspberry Pi is a very good tool for such a task, but for a more complex task like ROS, it's probably not good
+          enough. So I should have used a different development board, I think something from the Jetson range would
+          be a better option.
 
         </p>
-        <p>I am ongoing courses for Autonomous Driving Cars and when I go deeper in the subject I see that I have to
-          invest in better development board.
-          I have a plan to purchase Jetson Nano or Jetson Orin Nano and build much better vision system to my robot.
+        <p>At the moment I am doing courses on Udemy for Autonomous Driving Cars and when I delve into the subject, I
+          see that I need to invest in a better development board. I plan to buy Jetson Nano or Jetson Orin Nano and
+          build a much better autonomous system for my robot.
         </p>
 
       </div>
