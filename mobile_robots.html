@@ -76,16 +76,18 @@
       <div class="col-sm-10 col-md-10 col-lg-10">
         <h1> Mobile robots</h1>
         <br>
-        <p>Why mobile robots? They have many applications, programming them is a challenging task, especially when you
-          get to the part of recognising objects with a camera and proximity sensors.
-          The robots need a controller and can be extended with an additional arm to pick up objects. </p>
+        <p>Why mobile robots? They have many applications, programming them is a challenging task, especially when get
+          to the part of objects detection with a camera and mapping.
+          The robot has many peripheral devices, such as motors and sensors, and can be expanded with an additional arm
+          for lifting objects. </p>
 
-        <p> Started to take an interest in building robots in 2008.
-          Those were very different times, hardly anyone had heard about Arduino. Raspberry Pi had not yet been born.
-          Building a mobile robot required more work than today.
-          Started by buying an Atmega development board and a stack of books on programming microcontrollers in BASCOM.
-          After couple weeks I build six-wheeled vehicle. It had two DC motors and four servos for turning. On the front
-          of the vehicle is proximity sensor I built.
+        <p> I became interested in building robots in 2008.
+          These were completely different times, almost no one had heard of Arduino, and Raspberry Pi had not yet been
+          born. Building a mobile robot required more work than today.
+          For the first project, I decided to buy a development board with an Atmel chip. I had got online a books for
+          programming microcontrollers in BASCOM.
+          After a few weeks, I built a six-wheeled vehicle. It had two DC motors and four servos to turn the wheels.
+          There is a proximity sensor installed at the front of the vehicle, which I built from scratch.
         </p>
       </div>
     </section>
@@ -123,10 +125,9 @@
           Experimented a bit with diodes and buttons and started building a line follower.
           Decided that would postpone the six-wheeler project as it required more work and money(let's not forget the
           crisis).
-          Converted servo motors used as drive, and turning is done by adjusting the speed
-          of the driven wheels.
-          On the front is a sensor module for colour recognition. On the back is an arduino and a motor controller
-          built and a colour sensor controller.
+          The driving direction is changed by adjusting the speed of the driven wheels.
+          On the front is a sensor module for color recognition. On the back is an arduino and a motor controller
+          built and a color sensor controller.
         </p>
       </div>
     </section>
@@ -393,7 +394,7 @@
           right, then it goes right and stops at the end when it sees "stop".
         </p>
         <p>
-          To build the object recognition model, I used the google colab project made by <a
+          To train a model, I used the google colab project made by <a
             href="https://colab.research.google.com/drive/1hf11j_eM67ogYupwv1YG7da321A2KVGg?usp=sharing"> Eje
             Electronics. </a>
           I modified the code to my needs so that my robot could make a "decision" based on what it sees.
@@ -401,12 +402,18 @@
         </p>
 
         <p>
-          Using only Raspberry Pi you can only get 2 fps, but using Coral accelerator allows me to increase it to 9 fps.
-          As you can see, the raspberry pi allows me to create an autonomous robot with near real-time object detection,
-          but when we add additional elements such as motor control, the FPS drops drastically. In my opinion, the
-          Raspberry Pi is a very good tool for such a task, but for a more complex task like ROS, it's probably not good
+
+          ​Look up details
+          352 / 5,000
+          Translation results
+          Translation result
+          Using the Raspberry Pi alone can only get 2 FPS, but the Coral accelerator allows me to increase that speed to
+          9 FPS. As you can see, the raspberry pi allows me to create an autonomous robot with near real-time object
+          detection, but when the robot is driving and using other sensors, the frame rate drops dramatically. In my
+          opinion, the
+          Raspberry Pi is a very good tool for basic task, but for a more complex task like ROS, it's probably not good
           enough. I think that something from the Jetson range would
-          be a better option.
+          be a better option because has better GPU.
         </p>
 
       </div>
