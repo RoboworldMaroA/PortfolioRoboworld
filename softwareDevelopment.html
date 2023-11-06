@@ -366,12 +366,11 @@
                 <h2> Setup Environment</h2>
                 <p>
                     I used the instructions posted on pyimagesearch.com to install all dependencies.<br>
-                    The environment installed on my system is:<br>
+                    Main dependencies installed on Ubuntu 20.04<br>
                     Python 3.8.2<br>
-                    GCC 9.3.0<br>
-                    CV2 3.4.4<br>
+                    Open CV 3.4.4<br>
                 </p>
-                <p>To run the application, I created a Bash file to enable the commands stored in the file. </p>
+                <p>To run the application, I created a bash script as shown in the photo below. </p>
 
 
             </div>
@@ -398,9 +397,9 @@
         <section class="row justify-content-md-center" id="textInVisionSystem2">
             <div class="col-sm-10 col-md-10 col-lg-10">
                 <p>
-                    The largest window is our main window. In this window is smaller blue square is displayed.
-                    This is where we have to place the object that we want to recognize.
-                    The smaller window on the left shows only what we see in this blue window.
+                    The largest window is the main window. There is a smaller blue square in this window. This is the
+                    place where we need to place the object we want to recognize.The smaller window on the left shows
+                    only what we see in this blue zone.
                 </p>
             </div>
         </section>
@@ -425,11 +424,11 @@
         <section class="row justify-content-md-center" id="textInVisionSystem3">
             <div class="col-sm-10 col-md-10 col-lg-10">
                 <p>
-                    Press the space bar to confirm that you want to take the photo. New window will appear with
+                    Press the space bar to take the photo. New window will appear with
                     the
                     photo that just have been taken.
                     The system will ask you if you are happy with the result.
-                    If so confirm by pressing esc or if not press space again and choose another frame.
+                    If so, confirm by pressing esc or if not press space again and choose another frame.
                 </p>
             </div>
         </section>
@@ -454,8 +453,7 @@
         <section class="row justify-content-md-center" id="textInVisionSystem4">
             <div class="col-sm-10 col-md-10 col-lg-10">
                 <p>
-                    After pressing esc, the image will be saved to the hard drive.
-                    Another program will be started which allows the recognition of the objects.
+                    The image will then be saved to your hard drive and object recognition will begin.
                 </p>
             </div>
         </section>
@@ -514,7 +512,7 @@
     <div class="container-fluid">
         <section class="row justify-content-md-center" id="textInVisionSystem6">
             <div class="col-sm-10 col-md-10 col-lg-10">
-                <h2> Python code for capture the photo from user</h2>
+                <h2> Python code for capture the photo from the user.</h2>
             </div>
         </section>
     </div>
@@ -538,8 +536,8 @@
     <div class="container-fluid">
         <section class="row justify-content-md-center" id="textInVisionSystem7">
             <div class="col-sm-10 col-md-10 col-lg-10">
-                <h2> Functions used in the program for object recognition.</h2>
-                <p>Function used to compare object 1</p>
+                <h2> Functions used for object recognition.</h2>
+                <p>Comparison with object number one.</p>
             </div>
         </section>
     </div>
@@ -562,7 +560,7 @@
     <div class="container-fluid">
         <section class="row justify-content-md-center" id="textInVisionSystem8">
             <div class="col-sm-10 col-md-10 col-lg-10">
-                <p>Function used to compare object 2</p>
+                <p>Comparison with object number two.</p>
             </div>
         </section>
     </div>
@@ -585,7 +583,7 @@
     <div class="container-fluid">
         <section class="row justify-content-md-center" id="textInVisionSystem9">
             <div class="col-sm-10 col-md-10 col-lg-10">
-                <p>Function used to compare object 3</p>
+                <p>Comparison with object number three.</p>
             </div>
         </section>
     </div>
@@ -632,7 +630,7 @@
         <section class="row justify-content-md-center" id="textInVisionSystem11">
             <div class="col-sm-10 col-md-10 col-lg-10">
                 <p>Main loop that recognize the objects and print information on the screen.</p>
-                <p>Matches are objects that take an array data from the sift_detector and compare with the
+                <p>Matches are the objects that take an array data from the sift_detector and compare with the
                     threshold.
                     Threshold allows you to adjust sensitivity of the application. This value is set after
                     tests.</p>
