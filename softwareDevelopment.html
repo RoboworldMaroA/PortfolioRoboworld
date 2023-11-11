@@ -11,6 +11,7 @@
 
     <link href="CSS_Portfolio/portfolioSoftwareDevelopment.css" rel="stylesheet" type="text/css" />
 
+
 </head>
 
 <body>
@@ -79,7 +80,7 @@
                         href="https://www.ncirl.ie/News/ArtMID/748/ArticleID/811/Dean%E2%80%99sDirector%E2%80%99s-Honour-List-20212022">
                         Dean's Honours List </a> for the class of 2021-2022, and my overall honors grade was 86.6%.
 
-                    All subjects was very interesting but especially this one were codding was needed.
+                    All subject were very interesting, but especially those requiring coding.
                     I had a subjects such as:
                     Java Software Development, Web Design, Databases, Object-Oriented Software Engineering, Computer
                     Architecture, Operating Systems and Networks,
@@ -107,28 +108,9 @@
                     </a>
                     SmartLuggage – The Application for Easy Packing
                 </h1>
+
                 <p>
-                    The goal is to build an application that:<br>
-                    • is easy to use and fast to run<br>
-                    • take advantage of the latest technology available<br>
-                    • machine learning for object recognition is applied as an innovative part of this project.<br>
-                    • use weather API<br>
-                    • use Google API for searching destination<br>
-                    <br>
-                    Why the SmartLuggage app will make a traveler's life easier?<br>
-                    • less stress of forgetting an important document needed during the trip<br>
-                    • making your own packing list means, you always have to rely on your memory, with the SmartLuggage
-                    it will be easier because will give you a hint what to pack for your trip<br>
-                    • by choosing a destination and type of travel, the application will show you what to pack to avoid
-                    carrying unnecessary items during your trip<br>
-                    • your travel list is always with you on your phone <br>
-                    • the approximate weight of your luggage, given after creating the list of items, will protect you
-                    from excess baggage at the airport<br>
-                    • SmartLuggage is designed to make packing easy, fast and pleasant from now on<br>
-                </p>
-                <h1> Conclusion</h1>
-                <p>
-                    Built app makes packing easy through an easy-to-use smart item allocation system.
+                    I built an app that makes a packing easy through an easy-to-use smart item allocation system.
                     It allocates items to the appropriate category based on the user's activity and gender.
                     It calculates the weight and number of items in the packed luggage. It allows you to add your own
                     items and delete unnecessary ones.
@@ -142,11 +124,6 @@
                     The application is intuitive and uses the latest technology.
                     In addition registration, login and administration panel is implemented.
 
-                </p>
-                <h1> Future Scope of Project </h1>
-                <p>
-                    In the future, the vision system should be improved.
-                    It should also be possible to save the list and send it to an e-mail address or via Messenger.
                 </p>
 
                 <p>The Frontend is hosted on DigitalOcean and Backend on Heroku. Can be viewed via this <a
@@ -187,7 +164,7 @@
                     <div class="clearfix visible-sm-block"></div>
                     <article class="col-sm-6 col-lg-6 col-md-6">
                         <img tabindex="1" src="projects/softwareDevelopment/Register_small.png" alt="Register Page"
-                            class="img-fluid " title="Regsier Page on SmartLuggage" />
+                            class="img-fluid " title="Register Page on SmartLuggage" />
                         <a class="btn btn-primary btn-md" href="https://smartluggage-ijzs3.ondigitalocean.app/Register"
                             role="button">Register Page</a>
                         <p></p>
@@ -224,7 +201,7 @@
                         <p> </p>
                     </article>
 
-                    <!-- another 2 phothos -->
+                    <!-- another 2 photos -->
                     <article class="col-sm-6 col-lg-6 col-md-6">
                         <img src="projects/softwareDevelopment/PackYorLuggage2_small.png" alt="Pack Your Luggage"
                             class="img-fluid " />
@@ -290,7 +267,7 @@
                     <div class="clearfix visible-sm-block"></div>
                     <article class="col-sm-6 col-lg-6 col-md-6">
                         <img src="projects/softwareDevelopment/CosmeticsAndFirstAid_small.png"
-                            alt="Display Luggage - Cosmethics and First Aid" class="img-fluid " />
+                            alt="Display Luggage - Cosmetics and First Aid" class="img-fluid " />
                         <a class="btn btn-primary btn-md"
                             href="https://smartluggage-ijzs3.ondigitalocean.app/displayList" role="button">Display
                             Cosmetics And First Aid </a>
@@ -518,6 +495,7 @@
     </div>
 
 
+
     <section id="photosUnderSoftwareDevelopmentRunVisionSystem6">
         <div class="container">
             <div class="col-lg-12">
@@ -525,6 +503,75 @@
                     <article class="col-sm-10 col-lg-6 col-md-6">
                         <img src="projects/softwareDevelopment/VisionSystemPhoto6v3.png" alt="Run Vision System"
                             class="img-fluid " />
+
+
+                        <!-- NOT FINISHED SNIPPET
+                        <pre>
+                            <code class="selectCode"> 
+                                #camera on
+import cv2
+cam = cv2.VideoCapture(0)
+
+cv2.namedWindow("Object1")
+
+img_counter = 0
+
+#looping and waiting for user action
+while True:
+    ret, frame = cam.read()
+    if not ret:
+        print("failed to grab frame")
+        break
+
+    # Get height and width of webcam frame
+    height, width = frame.shape[:2]
+
+    # Define ROI Box Dimensions
+    top_left_x = int(width / 3)
+    top_left_y = int((height / 2) + (height / 4))
+    bottom_right_x = int((width / 3) * 2)
+    bottom_right_y = int((height / 2) - (height / 4))
+
+    # Draw rectangular window for our region of interest   
+    cv2.rectangle(frame, (top_left_x, top_left_y), (bottom_right_x, bottom_right_y), 255, 3)
+
+    # print(frame)#for testing only
+    # Crop window of observation we defined above
+    cropped = frame[bottom_right_y:top_left_y, top_left_x:bottom_right_x]
+    # print(cropped)
+    cv2.imshow('want recognize this product? ESC for yes, space fore next photo', cropped)  # comment later
+    cv2.imshow('Set object in blue square press SPACE if ok then press escape', frame)
+
+    # Flip frame orientation horizontally we do that because it is easier for us to put he object in front of the camera
+    frame = cv2.flip(frame, 1)  # comment this later
+    # cv2.imshow('flipped frame', frame)#comment this later
+
+    k = cv2.waitKey(1)
+    if k % 256 == 27:
+        # ESC pressed
+        print("Escape will closing a window and jump to next stage")
+        break
+    elif k % 256 == 32:
+        # SPACE pressed
+        # img_name = "opencv_frame_{}.png".format(img_counter)
+        img_name = "maro_image/Object1.png".format(img_counter)
+        # cv2.imwrite(img_name, frame)
+        cv2.imwrite(img_name, cropped)
+        print("{} written!".format(img_name))
+        img_counter += 1
+        cv2.imshow('Press escape If you happy with this photo', cropped)
+
+cam.release()
+
+cv2.destroyAllWindows()
+
+                            </code>
+                        </pre>
+
+
+                        <button onclick="copyToClipboard()"> Copy </button> -->
+
+
                     </article>
 
                 </div>
@@ -741,6 +788,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+
+
+    <script src="javascript/softwareDevelopment.js"></script>
 
 </body>
 
