@@ -64,7 +64,7 @@ main {
 
 #photoAndButtonMobileRobots {
   text-align: center;
-  margin-top: 10;
+  padding-bottom: 5%;
 }
 
 #photoAndButtonSoftwareDevelopment {
@@ -114,4 +114,16 @@ h1 {
 .smartluggageFrame {
   width: 10px;
   height: 10px;
+}
+
+
+
+
+#buttonMobileRobotsIndex{
+  padding-top: 2%;
+  margin-top: 3%;
+}
+
+#videoControlerMobileRobot{
+  margin-top: 2%;
 }
