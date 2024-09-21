@@ -29,7 +29,3 @@ const copyToClipboard = async () => {
     }
   };
 
-
-
-
- 

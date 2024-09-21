@@ -1,7 +1,13 @@
 article {
-  text-align: center;
+  text-align: left;
   color: #9b9797;
 }
+
+
+/* a{
+  text-align: center;
+  color: #9b9797;
+} */
 
 /* Modify the background color */
 .navbar-custom {
@@ -367,6 +373,24 @@ h2 {
 }
 
 
-.code {
+.pre {
   text-align: left;
+}
+
+
+.description-under-the-photo{
+  text-align: center;
+  margin-left: 0%;
+  color: #efe7e7;
+}
+
+
+/* .description-under-the-photo-home{
+  text-align: center;
+  margin-left: 38%;
+  color: #efe7e7;
+} */
+
+a {
+  color: #efe7e7;
 }
