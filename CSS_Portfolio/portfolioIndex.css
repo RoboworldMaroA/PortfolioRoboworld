@@ -1,3 +1,19 @@
+
+/* h1{
+  font-family: "Caveat", cursive;
+} */
+
+
+
+body {
+  font-family: "Rajdhani";
+  /* font-style: italic; */
+  /* font-optical-sizing: auto; */
+  font-weight: 300;
+  /* font-style: normal; */
+}
+
+
 /* Modify the background color */
 .navbar-custom {
   background-color: #87b3cc;
@@ -60,15 +76,18 @@ main {
 
 #photoAndButtonAutomationsAndRobotics {
   text-align: center;
+  padding-top: 0.5%;
 }
 
 #photoAndButtonMobileRobots {
   text-align: center;
-  padding-bottom: 5%;
+  padding-bottom: 0%;
+  margin-bottom: 1%;
 }
 
 #photoAndButtonSoftwareDevelopment {
   text-align: center;
+  padding-top: 0.5%;
 }
 
 img {
@@ -120,10 +139,19 @@ h1 {
 
 
 #buttonMobileRobotsIndex{
-  padding-top: 2%;
-  margin-top: 3%;
+  padding-top: 4%;
+  margin-top: 4%;
 }
 
 #videoControlerMobileRobot{
   margin-top: 2%;
+  margin-bottom: 2.5%;
+}
+
+
+.description-under-the-photo{
+  padding-top: 5%;
+  text-align: center;
+  margin-left: 0%;
+  color: #efe7e7;
 }
