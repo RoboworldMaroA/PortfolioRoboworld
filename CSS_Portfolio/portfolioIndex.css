@@ -3,20 +3,60 @@
   font-family: "Caveat", cursive;
 } */
 
+/* This color is nice #dce2f1; 
+origanl background: --my-background-color : #052a3f;
+*/
+
+:root {
+  --my-background-color : #031c2b;
+  --my-white-background-color : #cfd6e7;
+  --my-text-color:  #e5d7d7; 
+ 
+}
+
 
 
 body {
   font-family: "Rajdhani";
   /* font-style: italic; */
   /* font-optical-sizing: auto; */
-  font-weight: 300;
+  font-weight: 400;
   /* font-style: normal; */
+  margin-right: none;
+  background-color: var(--my-white-background-color);
 }
+
+
+a {
+  color: var(--my-background-color);
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: #2174b4;
+  text-decoration: none !important;
+}
+
+#navbarIndex{
+  background-color: var(--my-background-color);
+  padding: 0%;
+  margin-right: 0%;
+}
+
+.navbar-brand{
+  color: rgb(192, 213, 213);
+  font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  font-size: 1.8rem;
+}
+
 
 
 /* Modify the background color */
 .navbar-custom {
-  background-color: #87b3cc;
+  /* background-color: #87b3cc; */
+  background-color: var(--my-background-color);
 }
 
 .navbar-custom .navbar-brand {
@@ -25,6 +65,7 @@ body {
 
 .navbar-custom .navbar-text {
   color: #f4e9e9;
+  
 }
 
 /* Set the border color */
@@ -39,40 +80,73 @@ body {
 }
 
 .nav-item :active {
-  color: #efe7e7;
+  color: #8e99a3;
 }
 
 .nav-link {
-  color: #f0f0f5;
+  color: #b9b9c7;
+  font-size: 1.2em;
+}
+
+
+
+
+.dropdown-menu{
+  background-color: var(--my-white-background-color);
+}
+.dropdown-item{
+  color: #363739;
+  font-size: 1.2em;
+
+}
+.dropdown-item:hover {
+  color: #111315;
+  background-color: #b1bed2;
 }
 
 #textInTheMiddle {
-  background-color: #052a3f;
+  /* background-color: #052a3f; */
+  background-color: var(--my-background-color);
 }
 
 #textInTheMiddle p {
-  font-size: 1.2em;
-  color: #ffffff;
+  font-size: 1.3em;
+  /* color: #ffffff; */
+  color: var(--my-text-color);
 }
 
 main {
-  background-color: #052a3f;
+  /* background-color: #052a3f; */
+  background-color: var(--my-background-color);
   padding-top: 25%;
 }
 
 #photosUnderDescription {
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
+  background-color: var(--my-white-background-color);
   margin-top: 2%;
 }
 
 .btn {
-  background-color: #052a3f;
+  /* background-color: #052a3f; */
+  background-color: var(--my-background-color);
   margin-top: 1.2%;
+  
 }
 
+/* .btn:hover{
+  background-color: var(--my-background-color);
+  color: #e4662b;
+} */
+
 .navbar {
-  background-color: #052a3f;
+  /* background-color: #052a3f; */
+  background-color: var(--my-background-color);
 }
+
+/* .navbar a:hover {
+  color: #000 ;
+} */
 
 #photoAndButtonAutomationsAndRobotics {
   text-align: center;
@@ -109,7 +183,8 @@ img:focus {
 }
 
 footer {
-  background-color: #f0f0f5;
+  /* background-color: #f0f0f5; */
+  background-color: var(--my-white-background-color);
   text-align: center;
   font-size: 1em;
   padding-bottom: 0.5%;
@@ -126,7 +201,7 @@ footer {
 h1 {
   font-size: 1.6em;
   color: #ffffff;
-  padding-bottom: 0.5%;
+  padding-bottom: 2.5%;
 }
 
 
@@ -148,10 +223,73 @@ h1 {
   margin-bottom: 2.5%;
 }
 
+#videoControlerMobileRobot a{
+  text-decoration-line: none;
+}
+
+
 
 .description-under-the-photo{
   padding-top: 5%;
   text-align: center;
   margin-left: 0%;
   color: #efe7e7;
+}
+
+
+
+
+
+.wave {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  /* background: #052a3f; */
+  background: var(--my-background-color);;
+}
+.wave::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  background: var(--my-white-background-color);
+  border-radius: 20% 50% 30% 30% / 20px 10px 0px 0px;
+}
+
+
+
+
+.wave2 {
+  position: relative;
+  width: 100%;
+  height: 70px;
+  background: var(--my-white-background-color);
+}
+.wave2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: var(--my-white-background-color);
+  border-radius: 60% 0% 0% 0% / 20px 0px 20px 60px;
+}
+
+
+
+#typewriter{
+  font-family: "Rajdhani";
+  text-align: center;
+  overflow: hidden;
+  font-size: 2em;
+
+}
+
+.hidden {
+  visibility: hidden;
 }

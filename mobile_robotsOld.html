@@ -16,68 +16,59 @@
 </head>
 
 <body>
+
   <header>
-    <section class="row justify-content-md-center" id="navbarIndex">
-      <div class="col-sm-12 col-md-10 col-lg-10 ">
+    <nav class="navbar navbar-expand-lg navbar-custom">
+      <a class="navbar-brand" href="index.html"><b>ROBO-WORLD</b></a>
+      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-        <nav class="navbar navbar-expand-lg navbar-custom">
-          <a class="navbar-brand" href="index.html"><b>ROBO-WORLD</b></a>
-          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-            aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+          </li>
 
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item active">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-              </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="automations.html">Automations</a>
+              <a class="dropdown-item active" href="mobile_robots.html">Mobile Robots</a>
+              <a class="dropdown-item" href="https://smartluggage2023.ew.r.appspot.com/">Smart Luggage</a>
+              <a class="dropdown-item" href="softwareDevelopmentV2.html">Software Development</a>
+              <a class="dropdown-item" href="https://manage-customers-4x6n9.ondigitalocean.app/objectDetection.html">
+                Computer Vision</a>
+            </div>
+          </li>
 
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Projects
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="automations.html">Automations</a>
-                  <a class="dropdown-item" href="mobile_robots.html">Mobile Robots</a>
-                  <a class="dropdown-item" href="https://smartluggage2023.ew.r.appspot.com/">Smart Luggage</a>
-                  <a class="dropdown-item" href="softwareDevelopmentV2.html">Software Development</a>
-                  <a class="dropdown-item"
-                    href="https://manage-customers-4x6n9.ondigitalocean.app/objectDetection.html">
-                    Computer Vision</a>
-                </div>
-              </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about_me.html">About me</a>
+          </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="about_me.html">About me</a>
-              </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Language
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="index.html">EN</a>
+            </div>
+          </li>
 
-
-              <!-- <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-                  aria-haspopup="true" aria-expanded="false">
-                  Language
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="index.html">EN</a>
-
-                </div>
-              </li> -->
-
-            </ul>
-            <!-- <form class="form-inline my-2 my-lg-0">
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
-          </div>
-        </nav>
+        </form>
       </div>
-    </section>
+    </nav>
   </header>
-
-
 
   <!-- INTRODUCING MOBILE ROBOTS -->
 
@@ -85,15 +76,13 @@
   <main role="main" class="container-fluid">
     <section class="row justify-content-md-center" id="textInMobileRobotsIntroduction">
       <div class="col-sm-10 col-md-10 col-lg-10">
-        <!-- <h1> Mobile robots</h1> -->
-        <h1 id="typewriter"></h1>
+        <h1> Mobile robots</h1>
         <br>
         <p>I chose mobile robots because they have many applications and programming them is a difficult task,
           especially when it comes to detecting objects using cameras and mapping.
           The robot has many peripheral devices, such as motors and sensors, and can be expanded with an additional arm
           for lifting objects. </p>
-        <p>Additionally, this is the first step if you want to design your own ADAS, such as those used in modern cars.
-        </p>
+        <p>Addition to that it is first step for more advanced system like ADAS that is use in modern cars.</p>
 
         <p> I became interested in building robots in 2008.
           These were completely different times, almost no one had heard of Arduino, and Raspberry Pi had not yet been
@@ -418,10 +407,9 @@
           right, then it goes right and stops at the end when it sees "stop".
         </p>
         <p>
-          I used program on<a
-            href="https://colab.research.google.com/drive/1hf11j_eM67ogYupwv1YG7da321A2KVGg?usp=sharing"> <span
-              style="color: rgb(168, 101, 14);">Google Colab
-              Notebook </span></a> to train a model.
+          I used program on <a
+            href="https://colab.research.google.com/drive/1hf11j_eM67ogYupwv1YG7da321A2KVGg?usp=sharing">Google Colab
+            Notebook </a> to train a model.
 
           This code allows my robot to "make a decision" based on what it sees.
 
@@ -517,9 +505,6 @@
 
     <p>2020-2024 Roboworld - Marek Augustyn</p>
   </footer>
-
-  <!-- JavaScript used to fetch data from API -->
-  <script src="javascript/mobileRobots.js"></script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

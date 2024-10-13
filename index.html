@@ -28,65 +28,74 @@
 <body>
 
   <header>
-    <nav class="navbar navbar-expand-lg navbar-custom">
-      <a class="navbar-brand" href="index.html"><b>ROBO-WORLD</b></a>
-      <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+    <section class="row justify-content-md-center" id="navbarIndex">
+      <div class="col-sm-12 col-md-10 col-lg-10 ">
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-          </li>
+        <nav class="navbar navbar-expand-lg navbar-custom">
+          <a class="navbar-brand" href="index.html"><b>ROBO-WORLD</b></a>
+          <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Projects
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="automations.html">Automations</a>
-              <a class="dropdown-item" href="mobile_robots.html">Mobile Robots</a>
-              <a class="dropdown-item" href="https://smartluggage2023.ew.r.appspot.com/">Smart Luggage</a>
-              <a class="dropdown-item" href="softwareDevelopmentV2.html">Software Development</a>
-              <a class="dropdown-item" href="https://manage-customers-4x6n9.ondigitalocean.app/objectDetection.html">
-                Computer Vision</a>
-            </div>
-          </li>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="about_me.html">About me</a>
-          </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Projects
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="automations.html">Automations</a>
+                  <a class="dropdown-item" href="mobile_robots.html">Mobile Robots</a>
+                  <a class="dropdown-item" href="https://smartluggage2023.ew.r.appspot.com/">Smart Luggage</a>
+                  <a class="dropdown-item" href="softwareDevelopmentV2.html">Software Development</a>
+                  <a class="dropdown-item"
+                    href="https://manage-customers-4x6n9.ondigitalocean.app/objectDetection.html">
+                    Computer Vision</a>
+                </div>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about_me.html">About me</a>
+              </li>
 
 
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Language
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="index.html">EN</a>
+              <!-- <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                  Language
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="index.html">EN</a>
 
-            </div>
-          </li>
+                </div>
+              </li> -->
 
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
+            </ul>
+            <!-- <form class="form-inline my-2 my-lg-0">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
-        </form>
+        </form> -->
+          </div>
+        </nav>
       </div>
-    </nav>
+    </section>
   </header>
 
 
   <main role="main" class="container-fluid">
     <section class="row justify-content-md-center" id="textInTheMiddle">
       <div class="col-sm-10 col-md-10 col-lg-10">
-        <h1>Hello, World!</h1>
+        <h1 id="typewriter"></h1>
+
+        <!-- <div id="typewriter"></div> -->
+
         <p>
           Welcome to my website about robotics and software development.
         </p>
@@ -98,7 +107,8 @@
           field is constantly changing and requires a lot of time commitment,
           but it is also incredibly fun and rewarding.
         </p>
-        <p></p>
+        <p>Below are links to sections where you will find videos and photos. There you will also find programs written
+          by me that you can use as inspiration for your own projects.</p>
         <p>I hope you will find something interesting for yourself. </p>
         </p>
         <p>Cheers</p>
@@ -107,7 +117,7 @@
       </div>
     </section>
   </main>
-
+  <div class="wave"></div>
   <section id="photosUnderDescription">
     <div class="container">
       <div class="col-lg-12">
@@ -181,7 +191,7 @@
     <p>2020-2024 Roboworld - Marek Augustyn (WHS)</p>
   </footer>
 
-  <!-- JavaScript used to fetch data from API -->
+  <!-- JavaScript  -->
   <script src="javascript/index.js"></script>
 
 
