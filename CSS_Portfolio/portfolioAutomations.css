@@ -158,7 +158,7 @@ a:hover {
 
 #textInTheMiddleRobotics {
   background-color: var(--my-background-color);
-  padding-top: 1%;
+  padding-top: 4%;
   padding-bottom: 1%;
 }
 
@@ -200,6 +200,11 @@ main {
   background-color: var(--my-background-color);
 }
 
+#carouselABBRobots{
+  padding-top: 2%;
+}
+
+
 .btn {
   background-color: var(--my-background-color);
   margin-top: 1.2%;
@@ -223,7 +228,7 @@ img {
 
 img:hover {
   box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.6);
-  transform: scale(1.02);
+  transform: scale(1.0);
 }
 
 img:focus {
@@ -233,7 +238,7 @@ img:focus {
 }
 
 footer {
-  background-color: #f0f0f5;
+  background-color: var(--my-white-background-color);
   text-align: center;
   font-size: 1em;
   padding-bottom: 0.5%;
@@ -272,4 +277,22 @@ h1 {
 
 button.custom-toggler.collapsed{
   color: #f0f0f5;
+}
+
+
+
+
+
+/* Animation ABB robots*/
+
+#typewriter{
+  font-family: "Rajdhani";
+  text-align: center;
+  overflow: hidden;
+  font-size: 2em;
+
+}
+
+.hidden {
+  visibility: hidden;
 }
