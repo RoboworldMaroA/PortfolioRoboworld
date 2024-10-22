@@ -243,6 +243,15 @@ main {
   padding-top: 25%;
 }
 
+#history {
+  /* background-color: #052a3f; */
+  background-color: var(--my-background-color);
+  padding-top: 1%;
+}
+#history h1 {
+ text-align: center;
+}
+
 .automationsTab {
   margin-left: 2%;
 }

@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
-  <link href="CSS_Portfolio/portfolioMobileRobots.css" rel="stylesheet" type="text/css" />
+  <link href="CSS_Portfolio/portfolioMobileRobots.css?v=1.2" rel="stylesheet" type="text/css" />
   <link href='https://fonts.googleapis.com/css?family=Rajdhani' rel='stylesheet'>
 
 </head>
@@ -95,6 +95,107 @@
         <p>Additionally, this is the first step if you want to design your own ADAS, such as those used in modern cars.
         </p>
 
+      </div>
+
+    </section>
+  </main>
+
+
+  <div class="container-fluid">
+    <section class="row justify-content-md-center" id="textInTrainModelStartStop">
+      <div class="col-sm-10 col-md-10 col-lg-10">
+
+        <p>
+          In my latest project, I successfully built a mobile robot integrated with a camera and powered by a Raspberry
+          Pi 4. Utilizing the MobileNetV2 model, I retrained the final layers to recognize specific command signs: "GO,"
+          "Turn Right," and "STOP."
+
+          Leveraging my knowledge of Deep Learning and Transfer Learning, I effectively programmed the robot using
+          Python to interpret these signs and respond accordingly. The robot initiates movement upon seeing the "GO"
+          sign, navigates a right turn when it detects the "Turn Right" sign, and comes to a halt when presented with
+          the "STOP" sign.
+
+          This demonstration underscores the potential of combining advanced machine learning techniques with practical
+          robotics to create responsive and intelligent systems. Check out the video to see the robot in action!
+
+        </p>
+        <p>
+          <!-- I used program on<a
+            href="https://colab.research.google.com/drive/1hf11j_eM67ogYupwv1YG7da321A2KVGg?usp=sharing"> <span
+              style="color: rgb(168, 101, 14);">Google Colab
+              Notebook </span></a> to train a model.
+
+          This code allows my robot to "make a decision" based on what it sees. -->
+          <!-- To do that I used Deep Learning. I retrained few last layers pertained Mobile Net v2 model. It is called
+        Transfer Learning. -->
+        </p>
+
+        <p>
+          <!-- Using the Raspberry Pi alone, I can only get 2 FPS, but the Coral accelerator allows me to increase that speed
+        to
+        9 FPS. As you can see, the Raspberry Pi allows me to create an autonomous robot with near real-time object
+        detection -->
+          <!-- but when the robot is driving and using other sensors, the frame rate drops dramatically.  -->
+          <!-- In my
+        opinion, the
+        Raspberry Pi is a very good tool for basic task, but for a more complex task like ROS, it's probably not good
+        enough. I think that something from the Jetson range would
+        be a better option because has better GPU. -->
+        </p>
+
+      </div>
+    </section>
+  </div>
+
+  <div class="wave"></div>
+  <!-- Videos Tensorflow Raspberry Pi 4 , Google Coral -->
+  <section id="videosUnderDescriptionTensorflow">
+    <div class="container">
+      <div class="col-lg-12">
+        <div class="row">
+          <article class="col-sm-offset-0 col-sm-6  col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3" id="videoControlerMobileRobot">
+              <iframe width="364" height="647"
+                src="projects/mobile_robots/fourWheelsRaspberryPi/robot_recognize_go_turn_right_and_stop2.mp4"
+                title="TensorflowObjectRecognitionStartStop"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p class="description-under-the-photo"><a href="https://github.com/RoboworldMaroA/Roboworld">GO,
+                Turn Right and Stop
+              </a></p>
+            <p>&nbsp;</p>
+          </article>
+
+          <article class=" col-sm-6 col-lg-6 col-md-6">
+            <div class="embed-responsive embed-responsive-4by3" id="videoControlerMobileRobot3">
+              <iframe width="364" height="647"
+                src="projects/mobile_robots/fourWheelsRaspberryPi/robot_recognize_go_turn_right_and_stop_raspberry_view2_short.mp4"
+                title="Tensorflow Driving Car"
+                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+            <p class="description-under-the-photo"><a href="https://github.com/RoboworldMaroA/Roboworld">Object
+                Recognition with Google Coral</a></p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+  <!--History-->
+  <div id="history" class="container-fluid">
+    <section class="row justify-content-md-center" id="textInMobileRobotsIntroduction">
+      <div class="col-sm-10 col-md-10 col-lg-10">
+        <h1> Previous projects</h1>
+
+
         <p> I became interested in building robots in 2008.
           These were completely different times, almost no one had heard of Arduino, and Raspberry Pi had not yet been
           born. Building a mobile robot required more work than today.
@@ -106,7 +207,8 @@
       </div>
 
     </section>
-  </main>
+  </div>
+
 
   <div class="wave"></div>
   <!-- Photos SIX WHEELS VEHICLE -->
@@ -405,26 +507,35 @@
     </div>
   </section>
 
-  <div class="wave2"></div>
+  <!-- <div class="wave2"></div> -->
   <!-- 28 June 2023 Trained model to recognize Start, Stop, turn back, turn left and right-->
-  <div class="container-fluid">
+  <!-- <div class="container-fluid">
     <section class="row justify-content-md-center" id="textInTrainModelStartStop">
       <div class="col-sm-10 col-md-10 col-lg-10">
 
-        <p>In July 2023, I taught my robot to recognize objects like signs Start, Go, Stop, Turn Left, Turn Right and
-          Turn back.</p>
-        <p>I implemented a control system for my robot depending on what it recognized.
-          Below you can see that when the robot recognizes GO, it starts to go forward when it encounters a sign, turn
-          right, then it goes right and stops at the end when it sees "stop".
-        </p>
         <p>
-          I used program on<a
+          In my latest project, I successfully built a mobile robot integrated with a camera and powered by a Raspberry
+          Pi 4. Utilizing the MobileNetV2 model, I retrained the final layers to recognize specific command signs: "GO,"
+          "Turn Right," and "STOP."
+
+          Leveraging my knowledge of Deep Learning and Transfer Learning, I effectively programmed the robot using
+          Python to interpret these signs and respond accordingly. The robot initiates movement upon seeing the "GO"
+          sign, navigates a right turn when it detects the "Turn Right" sign, and comes to a halt when presented with
+          the "STOP" sign.
+
+          This demonstration underscores the potential of combining advanced machine learning techniques with practical
+          robotics to create responsive and intelligent systems. Check out the video to see the robot in action! -->
+
+  <!-- </p>
+  <p> -->
+  <!-- I used program on<a
             href="https://colab.research.google.com/drive/1hf11j_eM67ogYupwv1YG7da321A2KVGg?usp=sharing"> <span
               style="color: rgb(168, 101, 14);">Google Colab
               Notebook </span></a> to train a model.
 
-          This code allows my robot to "make a decision" based on what it sees.
-
+          This code allows my robot to "make a decision" based on what it sees. -->
+  <!-- To do that I used Deep Learning. I retrained few last layers pertained Mobile Net v2 model. It is called
+          Transfer Learning.
         </p>
 
         <p>
@@ -440,10 +551,10 @@
 
       </div>
     </section>
-  </div>
-  <div class="wave"></div>
+  </div> -->
+  <!-- <div class="wave"></div> -->
   <!-- Videos Tensorflow Raspberry Pi 4 , Google Coral -->
-  <section id="videosUnderDescriptionTensorflow">
+  <!-- <section id="videosUnderDescriptionTensorflow">
     <div class="container">
       <div class="col-lg-12">
         <div class="row">
@@ -475,7 +586,7 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
 
 
   <!-- Add comments Not Implemented -->
@@ -519,7 +630,7 @@
   </footer>
 
   <!-- JavaScript used to fetch data from API -->
-  <script src="javascript/mobileRobots.js"></script>
+  <script src="javascript/mobileRobots.js?v=1.1"></script>
 
   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
     integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
