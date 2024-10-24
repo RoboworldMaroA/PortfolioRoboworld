@@ -143,13 +143,21 @@ a:hover {
   color: #f0f0f5;
 }
 
+#textInSoftwareDevelopmentIntroduction h1{
+ text-align: center;
+ padding-top: 1%;
+ padding-bottom: 1%;
+}
+
+
 #textInVisionSystem {
   background-color: var(--my-background-color);
 }
 
 #textInVisionSystem p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 
 #textInVisionSystem2 {
@@ -160,7 +168,8 @@ a:hover {
 
 #textInVisionSystem2 p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 
 #textInVisionSystem3 {
@@ -169,7 +178,8 @@ a:hover {
 
 #textInVisionSystem3 p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 
 #textInVisionSystem4 {
@@ -178,7 +188,8 @@ a:hover {
 
 #textInVisionSystem4 p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 
 #textInVisionSystem5 {
@@ -187,14 +198,16 @@ a:hover {
 
 #textInVisionSystem5 p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 #textInVisionSystem6 {
   background-color: var(--my-background-color);}
 
 #textInVisionSystem6 p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 #textInVisionSystem7 {
   background-color: var(--my-background-color);
@@ -202,7 +215,8 @@ a:hover {
 
 #textInVisionSystem7 p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 #textInVisionSystem8 {
   background-color: var(--my-background-color);
@@ -210,7 +224,8 @@ a:hover {
 
 #textInVisionSystem8 p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 #textInVisionSystem9 {
   background-color: var(--my-background-color);
@@ -218,7 +233,8 @@ a:hover {
 
 #textInVisionSystem9 p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 #textInVisionSystem10 {
   background-color: var(--my-background-color);
@@ -226,7 +242,8 @@ a:hover {
 
 #textInVisionSystem10 p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 #textInVisionSystem11 {
   background-color: var(--my-background-color);
@@ -234,7 +251,8 @@ a:hover {
 
 #textInVisionSystem11 p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 
 #textInWebDesign {
@@ -243,7 +261,8 @@ a:hover {
 
 #textInWebDesign p {
   font-size: 1.2em;
-  color: #f0f0f5;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
 }
 
 main {
@@ -263,6 +282,7 @@ main {
 #photosUnderSoftwareDevelopmentRunVisionSystem {
   background-color: var(--my-background-color);
   padding-top: 2%;
+  padding-bottom: 2%;
 }
 
 #photosUnderSoftwareDevelopmentRunVisionSystem2 {
@@ -315,6 +335,7 @@ main {
 #videoUnderDescription {
   background-color: #ffffff;
   padding-top: 3%;
+
 }
 
 #videosUnderDescriptionTensorflow {
@@ -356,6 +377,14 @@ main {
 .btn {
   background-color: var(--my-background-color);
   margin-top: 1.2%;
+  border-color: #142647;
+
+}
+
+.btn:hover{
+  /* background-color: #060606; */
+  background-color: var(--my-background-color);
+  color: #e4662b;
 }
 
 .navbar {
@@ -381,7 +410,8 @@ img:focus {
 }
 
 footer {
-  background-color: #f0f0f5;
+  /* background-color: #f0f0f5; */
+  background-color:  var(--my-white-background-color);
   text-align: center;
   font-size: 1em;
   padding-bottom: 0.5%;
@@ -401,13 +431,15 @@ footer a{
 }
 h1 {
   font-size: 1.7em;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: var(--my-text-color);
   padding-bottom: 0.5%;
 }
 
 h2 {
   font-size: 1.4em;
-  color: #ffffff;
+  /* color: #ffffff; */
+  color: var(--my-text-color);
   padding-bottom: 0.5%;
 }
 
@@ -432,7 +464,8 @@ h2 {
   padding: 15px;
   border: 2px solid lightgrey;
   background-color: #15181F;
-  color: white;
+  /* color: white; */
+  color: var(--my-text-color);
   white-space: pre;
 }
 
@@ -467,8 +500,9 @@ code{
 
 
 #carouselSoftwareDevelopment{
-  padding-top: 2%;
+  padding-top: 3%;
   background-color: var(--my-background-color);
+  padding-bottom: 3%;
 }
 
 #carouselSoftwareDevelopment p{
@@ -511,4 +545,99 @@ code{
 #details img {
     max-width: 100%;
     height: auto;
+}
+
+
+
+
+/* Waved borders */
+
+.wave {
+  position: relative;
+  width: 100%;
+  height: 100px;
+  /* background: #052a3f; */
+  background: var(--my-background-color);
+}
+.wave::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  /* background: white; */
+  background: var(--my-white-background-color);
+  border-radius: 20% 50% 30% 30% / 20px 10px 0px 0px;
+}
+
+
+
+
+.wave2 {
+  position: relative;
+  width: 100%;
+  height: 60px;
+  /* background: white; */
+  background: var(--my-white-background-color);
+}
+.wave2::after {
+  content: '';
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10px;
+  background: var(--my-background-color);
+  border-radius: 60% 0% 0% 0% / 20px 0px 20px 60px;
+}
+
+
+
+
+/* Animation Software Development */
+
+#typewriter{
+  font-family: "Rajdhani";
+  text-align: center;
+  overflow: hidden;
+  font-size: 2em;
+
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+
+/* Animation Vision System */
+
+#typewriter2{
+  font-family: "Rajdhani";
+  text-align: center;
+  overflow: hidden;
+  font-size: 2em;
+
+}
+
+.hidden2 {
+  visibility: hidden;
+}
+
+
+
+/* Animation Vision System */
+
+#typewriterWebDesign{
+  font-family: "Rajdhani";
+  text-align: center;
+  overflow: hidden;
+  font-size: 2em;
+
+}
+
+.hiddenWebDesign {
+  visibility: hidden;
 }

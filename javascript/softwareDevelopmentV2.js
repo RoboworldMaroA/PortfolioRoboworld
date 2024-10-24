@@ -31,6 +31,80 @@ const copyToClipboard = async () => {
 
 
 
+  function typeWriter(text, elementId, delay) {
+    let i = 0;
+    const element = document.getElementById(elementId);
+    function type() {
+        if (i < text.length) {
+            element.innerHTML += text.charAt(i);
+            i++;
+            setTimeout(type, delay);
+        }
+    }
+    type();
+}
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                const element = entry.target;
+                element.classList.remove('hidden');
+                typeWriter("Software Development", "typewriter", 300);
+                // typeWriter("Vision System", "typewriter2", 300);
+                observer.unobserve(element);
+            }
+        });
+    });
+
+    const target = document.getElementById('typewriter');
+    // const target2 =document.getElementById('typewriter2');
+    observer.observe(target);
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer2 = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              const element = entry.target;
+              element.classList.remove('hidden2');
+              // typeWriter("Software Development", "typewriter", 300);
+              typeWriter("Vision System", "typewriter2", 300);
+              observer2.unobserve(element);
+          }
+      });
+  });
+
+  // const target = document.getElementById('typewriter');
+  const target2 =document.getElementById('typewriter2');
+  observer2.observe(target2);
+});
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observerWebDesign = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+          if (entry.isIntersecting) {
+              const element = entry.target;
+              element.classList.remove('hiddenWebDesign');
+          
+              typeWriter("Web Design", "typewriterWebDesign", 300);
+              observerWebDesign.unobserve(element);
+          }
+      });
+  });
+
+  // const target = document.getElementById('typewriter');
+  const targetWebDesign =document.getElementById('typewriterWebDesign');
+  observerWebDesign.observe(targetWebDesign);
+});
 
 
 
