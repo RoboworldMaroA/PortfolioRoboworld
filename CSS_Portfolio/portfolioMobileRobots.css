@@ -163,6 +163,20 @@ a:hover {
   color: var(--my-text-color);
 }
 
+#textInMobileRobotsHistory {
+  /* background-color: #052a3f; */
+  background-color: var(--my-background-color);
+  /* margin-bottom: 2%; */
+  margin-top: 2%;
+  border-radius: 50px;
+}
+
+#textInMobileRobotsHistory p {
+  font-size: 1.2em;
+  /* color: #f0f0f5; */
+  color: var(--my-text-color);
+}
+
 #textInLineFollower {
   /* background-color: #052a3f; */
   background-color: var(--my-background-color);
@@ -269,6 +283,18 @@ main {
 }
 
 #videosUnderDescriptionTensorflow {
+  /* background-color: #ffffff; */
+  background-color: var(--my-white-background-color);
+  margin-top: 2%;
+}
+
+#videosUnderIntroduction {
+  /* background-color: #ffffff; */
+  background-color: var(--my-white-background-color);
+  margin-top: 2%;
+}
+
+#videosUnderDescriptionTensorflowRaspberryPi4 {
   /* background-color: #ffffff; */
   background-color: var(--my-white-background-color);
   margin-top: 2%;

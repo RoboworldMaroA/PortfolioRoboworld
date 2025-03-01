@@ -285,6 +285,12 @@ main {
   padding-bottom: 2%;
 }
 
+.photosUnderSoftwareDevelopmentRunVisionSystem {
+  background-color: var(--my-background-color);
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+
 #photosUnderSoftwareDevelopmentRunVisionSystem2 {
   background-color: var(--my-background-color);
   padding-top: 2%;
