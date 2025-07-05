@@ -561,7 +561,7 @@ code{
 .wave {
   position: relative;
   width: 100%;
-  height: 100px;
+  height: 60px;
   /* background: #052a3f; */
   background: var(--my-background-color);
 }
@@ -572,7 +572,7 @@ code{
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 80px;
+  height: 20px;
   /* background: white; */
   background: var(--my-white-background-color);
   border-radius: 20% 50% 30% 30% / 20px 10px 0px 0px;

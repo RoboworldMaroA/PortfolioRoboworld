@@ -113,8 +113,15 @@ a:hover {
   font-size: 1.3em;
   /* color: #ffffff; */
   color: var(--my-text-color);
+  padding-bottom: 2%;
 }
 
+.paragraphInTheMiddle {
+  font-size: 1.8em!important;
+  color: var(--my-text-color);
+  text-align: center;
+  
+}
 main {
   /* background-color: #052a3f; */
   background-color: var(--my-background-color);
@@ -201,7 +208,7 @@ footer {
 h1 {
   font-size: 1.6em;
   color: #ffffff;
-  padding-bottom: 2.5%;
+  padding-bottom: 2%;
 }
 
 
@@ -243,7 +250,7 @@ h1 {
 .wave {
   position: relative;
   width: 100%;
-  height: 50px;
+  height: 30px;
   /* background: #052a3f; */
   background: var(--my-background-color);;
 }
